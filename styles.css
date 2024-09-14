@@ -1,0 +1,96 @@
+/* Set a dark background for the entire page */
+
+body {
+    background-color: #333333;
+    /* Dark Gray */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    color: white;
+    /* Ensure text is readable against the dark background */
+}
+
+
+/* Hero Section Styling */
+
+.header {
+    background: url('https://example.com/labrador-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Padding and center alignment for content */
+
+.w3-container {
+    padding: 64px 20px;
+}
+
+
+/* Style the facts list */
+
+ul.w3-ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.w3-ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #777;
+    /* Slightly lighter color for borders */
+}
+
+
+/* Gallery styling for images */
+
+.w3-row-padding img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Darker shadow to match the dark theme */
+    transition: transform 0.3s;
+}
+
+.w3-row-padding img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer styling */
+
+footer {
+    background-color: #444444;
+    /* Dark gray footer to match the theme */
+    padding: 32px;
+    text-align: center;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
